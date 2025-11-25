@@ -19,7 +19,7 @@
 ### To run this test:
 
 
-1. Clone or Download
+1. Clone or Download:
     - Clone this repository: `git clone https://github.com/badj/HackerNewsTop100SortingPlaywrightTest.git`
     - Alternatively, download the ZIP file and extract it.
 

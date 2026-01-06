@@ -1,6 +1,6 @@
 # Hacker News Top 100 Article Sorting - Tested with Playwright
 
-> [**Playwright**](https://playwright.dev/) test script that validates that the first 100 [Hacker News](https://news.ycombinator.com/newest) articles are sorted from newest to oldest 
+> [**Playwright**](https://playwright.dev/) test script that validates that the first 100 [Hacker News](https://news.ycombinator.com/newest) articles are sorted from newest to oldes 
 > with [**Monocart**](https://github.com/cenfun/monocart-reporter) test reporter support.
 > - The project was created for a [QA Wolf](https://www.qawolf.com/) take home [assignment](https://www.task-wolf.com/apply-qae).
 > - Original QA Wolf [assignment README](QAWOLFREADME.md).
@@ -12,7 +12,7 @@
 - Collects exactly 100 articles by paginating through "More" links as needed 
 - Extracts timestamps from each article's age element 
 - Validates that all articles are sorted from newest to oldest chronologically 
-- Provides detailed error reporting if sorting violations are found 
+- Provides detailed error reporting if any sorting violations are found 
 - CI/CD Integration for [GitHub workflow support](https://github.com/badj/HackerNewsTop100SortingPlaywrightTest/actions) executing tests in [Docker](https://www.docker.com/) with GitHub Actions triggered on push/pull requests to main and for daily scheduled runs:
   - [![Playwright Tests in Docker](https://github.com/badj/HackerNewsTop100SortingPlaywrightTest/actions/workflows/main.yml/badge.svg)](https://github.com/badj/HackerNewsTop100SortingPlaywrightTest/actions/workflows/main.yml)
 

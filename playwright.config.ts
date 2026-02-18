@@ -19,7 +19,7 @@ export default defineConfig({
   // Reporter to use. See https://playwright.dev/docs/test-reporters
   reporter: [
       // Serve HTML report command 'npx playwright show-report'
-      ['html'],
+      ['html', { open: 'never' }],
       // Default line reporter for console output
       ['line'],
       ['monocart-reporter', { name: "Playwright POC Test Report", outputFile: './monocart-report/index.html'}]

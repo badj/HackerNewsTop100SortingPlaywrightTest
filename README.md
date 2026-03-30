@@ -1,6 +1,6 @@
 # Hacker News Top 100 Article Sorting - Tested with Playwright
 
-> [**Playwright**](https://playwright.dev/) test script that validates that the first 100 [Hacker News](https://news.ycombinator.com/newest) articles are sorted from newest to oldes 
+> [**Playwright**](https://playwright.dev/) test script that validates that the first 100 [Hacker News](https://news.ycombinator.com/newest) articles are sorted from newest to oldest 
 > with [**Monocart**](https://github.com/cenfun/monocart-reporter) test reporter support.
 > - The project was created for a [QA Wolf](https://www.qawolf.com/) take home [assignment](https://www.task-wolf.com/apply-qae).
 > - Original QA Wolf [assignment README](QAWOLFREADME.md).

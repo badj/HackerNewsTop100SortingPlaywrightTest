@@ -13,7 +13,7 @@ test.describe('Hacker News Article Sorting', () => {
 
         // Collect articles until we have at least 100
         while (articles.length < 100) {
-            console.log(`Scraping page ${currentPage}, collected ${articles.length} articles so far...`);
+            console.log(`🏴‍☠️.... Scraping page ${currentPage}, collected ${articles.length} articles so far...`);
 
             // Get all article rows on the current page
             const pageArticles = await page.$$eval('.athing', (rows) => {
@@ -49,7 +49,7 @@ test.describe('Hacker News Article Sorting', () => {
                 if (moreLink) {
                     await moreLink.click();
                     await page.waitForSelector('.athing');
-                    await page.waitForTimeout(5000); // Brief wait for content to load
+                    await page.waitForLoadState('domcontentloaded');
                     currentPage++;
                 } else {
                     console.warn(`Only found ${articles.length} articles before running out of pages`);

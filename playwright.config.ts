@@ -28,14 +28,14 @@ export default defineConfig({
     // Base URL to use in actions like `await page.goto('/')`
     baseURL: 'https://news.ycombinator.com/newest/',
     // Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer
-    screenshot: 'on',
-    // screenshot: 'only-on-failure',
-    video: 'on',
+    // screenshot: 'on',
+    screenshot: 'only-on-failure',
+    // video: 'on',
     // video: 'retain-on-failure',
-    // video: 'on-first-retry',
-    trace: 'on',
+    video: 'on-first-retry',
+    // trace: 'on',
     // trace: 'retain-on-failure',
-    // trace: 'on-first-retry',
+    trace: 'on-first-retry',
     },
 
   // Configure projects for major browsers

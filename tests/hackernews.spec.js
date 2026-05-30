@@ -15,7 +15,7 @@ test.describe('Hacker News Article Sorting', () => {
         while (articles.length < 100) {
             console.log(`Scraping page ${currentPage}, collected ${articles.length} articles so far...`);
 
-            // Get all article rows on current page
+            // Get all article rows on the current page
             const pageArticles = await page.$$eval('.athing', (rows) => {
                 return rows.map(row => {
                     const id = row.getAttribute('id');
@@ -43,7 +43,7 @@ test.describe('Hacker News Article Sorting', () => {
                 }
             }
 
-            // Click "More" link to load more articles
+            // Click the "More" link to load more articles
             if (articles.length < 100) {
                 const moreLink = await page.$('a.morelink');
                 if (moreLink) {
@@ -75,7 +75,7 @@ test.describe('Hacker News Article Sorting', () => {
             const current = new Date(first100Articles[i].timestamp);
             const next = new Date(first100Articles[i + 1].timestamp);
 
-            // Current article should be newer (greater timestamp) than next article
+            // The current article should be newer (greater timestamp) than the next article
             if (current < next) {
                 sortingErrors.push({
                     position: i + 1,

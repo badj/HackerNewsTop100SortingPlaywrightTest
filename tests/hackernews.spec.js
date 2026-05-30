@@ -49,7 +49,7 @@ test.describe('Hacker News Article Sorting', () => {
                 if (moreLink) {
                     await moreLink.click();
                     await page.waitForSelector('.athing');
-                    await page.waitForTimeout(1000); // Brief wait for content to load
+                    await page.waitForTimeout(5000); // Brief wait for content to load
                     currentPage++;
                 } else {
                     console.warn(`Only found ${articles.length} articles before running out of pages`);

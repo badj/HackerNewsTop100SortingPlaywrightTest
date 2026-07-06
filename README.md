@@ -100,7 +100,7 @@ Last article: 2 hours ago (2026-05-08T20:55:41 1778273741)
 [MR] json: monocart-report/index.json
 [MR] view report: npx monocart show-report monocart-report/index.html
 
-To open last HTML report run:
+To open the last HTML report of the run:
 
   npx playwright show-report
 ```

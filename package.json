@@ -50,7 +50,7 @@
     "istanbul-lib-report": "^3.0.1",
     "istanbul-reports": "^3.2.0",
     "keygrip": "^1.1.0",
-    "koa": "^3.1.1",
+    "koa": "^3.2.1",
     "koa-compose": "^4.1.0",
     "koa-static-resolver": "^1.0.6",
     "lz-utils": "^2.1.0",
